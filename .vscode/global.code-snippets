@@ -1,0 +1,26 @@
+{
+  "querySelector": {
+    "scope": "javascript,typescript",
+    "prefix": "dqs",
+    "body": [
+      "const ${1:element} = document.querySelector('${2:selector}');",
+      "$3"
+    ],
+    "description": "Select a single HTML element using a CSS selector"
+  },
+  "querySelectorAll": {
+    "scope": "javascript,typescript",
+    "prefix": "dqsa",
+    "body": [
+      "const ${1:element} = document.querySelectorAll('${2:selector}');",
+      "$3"
+    ],
+    "description": "Select multiple HTML elements using a CSS selector"
+  },
+  "export-all": {
+    "scope": "javascript,typescript",
+    "prefix": "ex",
+    "body": ["export * from '$2';"],
+    "description": "Export a module"
+  }
+}
